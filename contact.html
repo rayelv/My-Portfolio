@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Rayel's Portfolio</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+        <!-- Navbar styling -->
+             <!-- Navbar expands on medium and larger screens but compacts on smaller screens -->
+            <nav class="navbar navbar-expand-md bg-black"> 
+                <div class="container">
+                    <a href="index.html" class="navbar-brand" >
+                        <span class=" text-white">&lt;/&gt; Rayel Vaoali &lt;/&gt; </span>
+                    </a>
+                    <!-- navbar toggler for smaller screens -->
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Button toggler is implemened to the list and links for smaller screens -->
+                    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                        <ul class="navbar-nav">
+                            <!-- Home link will disappear in the toggle menu but shhow up in larger screens -->
+                            <li class="nav-item"><a class="nav-link text-white fw-bold d-none d-md-block active link-danger" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link  text-white fw-bold link-danger" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link  text-white fw-bold link-danger" href= "projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container text-center">
+            <h2 class="my-5">📶Connect with me📶</h2>
+            <p class="text-center fs-5">You can send me an email using the form below ⬇️
+                Or get in contact with other ways listed.
+            </p>
+            <!-- form styling/ classes in the starting tag ensures that bootstraps validation system is in place and that the valid and invalid messages placed 
+                within the code works -->
+            <form class="row g-5 needs-validation was-validated" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control form-control-lg bg-info-subtle" id="validationCustom01"required>
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control form-control-lg bg-info-subtle" id="validationCustom02" required>
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="email1" class="form-label">Email</label>
+                    <input type="email" class="form-control form-control-lg bg-info-subtle" id="email1" required>
+                    <div class="valid-feedback">Got your email 😉!</div>
+                </div>
+
+                <div class="input-group my-5">
+                    <span class="input-group-text bg-info-subtle"> ✨Comments✨</span>
+                    <textarea class="form-control form-control-lg bg-info-subtle" id="comments01" aria-label="With textarea" required></textarea>
+                    <div class="valid-feedback">Noted!</div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button class ="btn btn-outline-danger" id="submit1"  type="submit">Submit form</button>
+                </div>
+            </form>
+            <!-- Accordion styling -->
+            <div class="container">
+                <div class="accordion m-5 " id="accordioncontact">
+                    <div class="accordion-item ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        📧 Email 📧
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordioncontact">
+                        <div class="accordion-body">
+                            <p>rayelvaoalii@gmail.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            🔗 LinkedIn Profile 🔗
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordioncontact">
+                        <div class="accordion-body">
+                            <!-- link to linkedin embedded -->
+                            <p> You can view my <a href="https://www.linkedin.com/in/rayel-vaoali-925695169/">LinkedIn Profile</a> at this link 👈🏼</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-info-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        🎮 GitHub Profile 🎮
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordioncontact">
+                        <div class="accordion-body">
+                            <!-- link to github profile also embedded -->
+                            <p> You can view my <a href="https://github.com/rayelv">GitHub Profile</a> at this link 👈🏼</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center text-white m-5" >
+            <p class="p-2"> Rayels Portfolio 💻</p>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

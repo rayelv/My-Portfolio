@@ -1,0 +1,68 @@
+body {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
+  
+  
+  @keyframes slideImage {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    
+    }
+  
+  img {
+    position: relative;
+    animation: fadeIn 4s ease-in-out forwards;
+  }
+  #profile{
+    width:300px; 
+    height: 280px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    animation: slideImage 4s ease-in-out forwards;
+
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  blockquote, cite {
+    opacity: 0; /* Initially hidden */
+    animation: slideIn 4s ease-in-out forwards;
+    margin-top: 50px;
+  }
+  
+  @media  screen and (max-width:600px){
+    #profile{
+      width:180px;
+      height:165px
+    }
+   
+  }

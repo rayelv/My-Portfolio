@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Rayel's Portfolio</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+        <!-- Navbar styling -->
+             <!-- Navbar expands on medium and larger screens but compacts on smaller screens -->
+            <nav class="navbar navbar-expand-md bg-black"> 
+                <div class="container">
+                    <a href="index.html" class="navbar-brand" >
+                      <span class=" text-white">&lt;/&gt; Rayel Vaoali &lt;/&gt; </span>
+                    </a>
+                    <!-- navbar toggler for smaller screens -->
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Button toggler is implemened to the list and links for smaller screens -->
+                    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                        <ul class="navbar-nav">
+                            <!-- Home link will disappear in the toggle menu but shhow up in larger screens -->
+                            <li class="nav-item"><a class="nav-link  text-white fw-bold  d-none d-md-block active link-danger" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white fw-bold link-danger" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link text-white fw-bold link-danger" href= "projects.html">Projects</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+          <!-- Bootstrap card Element used to showcase projects, fadein animation is also actiive with images on the cards-->
+        <div class="container">
+            <h2 class="text-white text-center my-5 ">⚙️Projects⚙️</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/chocolate.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">🍫Koko's Bakery</h5>
+                      <p class="card-text">KOKO's Bakery Website is built using <span class="fw-bold"> HTML,CSS and Bootstrap 5</span> providing a responsive platform to showcase rich chocolate desserts made with authentic Koko Samoa.</p>
+                      <!-- Each project has its GitHub link attached so viewers can go directly to that projects code -->
+                      <a href="https://github.com/rayelv/Chocolate-Vendor-Website.git"  id='Github' class="btn btn-outline-danger">Github Code</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/performing arts.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">🎭Dimond Center of Performing Arts</h5>
+                      <p class="card-text">The Dimond Center of Performing Arts Website is developed using <span class="fw-bold"> HTML,CSS and Google Fonts</span>, offering a dynamic and responsive platform to showcase events, venue details, and a curated food menu.</p>
+                      <a href="https://github.com/rayelv/Dimond-Center-of-Performing-Arts-Website.git" id='Github' class="btn btn-outline-danger">Github Code</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/ecommerce.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">🛍️Ecommerce API</h5>
+                      <span class="card-text">This E-Commerce API Project is built using <span class="fw-bold">Python and Flask</span> for the backend, with <span class = "fw-bold">Flask-SQLAlchemy and Flask-Marshmallow</span> for handling database interactions and serialization. It utilizes <span class="fw-bold">MYSQL</span> as the database to store user, product, and order data, and <span class="fw-bold">Marshmallow-SQLAlchemy</span> to support SQLAlchemy models for serialization and validation.</p>
+                      <a href="https://github.com/rayelv/ecommerce_api.git"  id='Github'class="btn btn-outline-danger">Github Code</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="/images/wizard.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">🧙🏼‍♂️Defeat the Evil Wizard</h5>
+                      <p class="card-text">This <span class="fw-bold">Pyhton</span> code defines a Character class and several subclasses (Warrior, Mage, EvilWizard, Archer, Paladin) for a turn-based battle game. It utilizes <span class="fw-bold">random</span> for generating random values for attacks, healing, and special abilities, and it demonstrates <span class="fw-bold">object-oriented programming (OOP)</span> concepts such as inheritance, polymorphism, and encapsulation.</p>
+                      <a href="https://github.com/rayelv/Defeat-the-Evil-Wizard.git" id='Github' class="btn btn-outline-danger">Github Code</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                      <img src="/images/to do list.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">📃To do list</h5>
+                        <p class="card-text">This <span class="fw-bold">Python</span> code implements a command-line to-do list application, utilizing basic functions and control structures for task management.</p>
+                        <a href="https://github.com/rayelv/to_do_list.git" id='Github' class="btn btn-outline-danger">Github Code</a>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </main>
+        <footer class="text-center text-white m-5" >
+          <p class="p-2"> Rayels Portfolio 💻</p>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+      </body>
+</html>
